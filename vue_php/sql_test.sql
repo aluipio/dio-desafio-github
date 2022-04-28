@@ -25,15 +25,15 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `phone` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=60 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 -- Copiando dados para a tabela test.usuarios: ~4 rows (aproximadamente)
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
 INSERT IGNORE INTO `usuarios` (`id`, `name`, `email`, `phone`) VALUES
-	(1, 'Anderson', 'aluipio@gmail.com', '23412431'),
-	(2, 'Vanessa Renata', 'Vanessa@gmail.com', '23412431'),
-	(45, 'Felipe', 'aluipio@hotmail.com', '0010020020'),
-	(59, 'l', 'dfhghfhgfh', 'fgkkjgjhgjhgj');
+	(1, 'Anderson', 'anderson@gmail.com', '0011110000'),
+	(2, 'Vanessa', 'vanessa@gmail.com', '2200001111'),
+	(3, 'Miguel', 'miguel@gmail.com', '3300002222'),
+	(4, 'Luiz', 'luiz@gmail.com', '0022223333');
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

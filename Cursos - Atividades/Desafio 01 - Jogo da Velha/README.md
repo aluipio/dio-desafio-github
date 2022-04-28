@@ -1,8 +1,8 @@
-# Desafio 01 - Bootcamp
+# Desafio 01 - Bootcamp: Jogo da Velha
 
 Projeto de jogo da velha em 26 de abril de 2022, pela [Digital Innovation One](https://digitalinnovation.one/).
 
-## Atividade: Light Mode/Dark Mode
+## Atividade -> Jogo da Velha
 
 1. Criar uma interface em HTML + CSS e JS.
 2. Montar uma estrutura básica.
