@@ -7,7 +7,7 @@ Projeto de jogo da velha em 26 de abril de 2022, pela [Digital Innovation One](h
 1. Criar uma interface em HTML + CSS e JS.
 2. Montar uma estrutura básica.
 
-## Para executar o projeto
+## Para executar:
 
 Para executar o projeto, execute o arquivo index.html em browser.
 
