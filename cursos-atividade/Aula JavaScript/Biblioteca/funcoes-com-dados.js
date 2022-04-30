@@ -2,6 +2,8 @@
 function range(tamanho, inicial = 1, intervalo = 0) {
     return [...Array(tamanho).keys()].map(i => i + inicial);
 }
+
+// range = (start, stop, step) => Array.from({ length: (stop - start) / step + 1}, (_, i) => start + (i * step));
 // --------------------------------------------------------------------------
 // Função Fatorial
 function fatorial(numero) {

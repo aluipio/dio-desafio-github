@@ -10,59 +10,43 @@ h1 {
 }
 
 body {
-	width: 100%;
-	margin-left: 0px;
-	margin-right: 0px;
-	padding: 0px 0px 0px 0px;
 	background-image: url(../imgs/fundo.jpg);
 }
 
 #container{
-	width: 100%;
+	width: 950px;
 	height: auto;
 	position: relative;
-	margin-left: 0px;
-	margin-right: 0px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
+
 #fundoGame {
-	/*width: 950px;*/
-	width: 100%;
+	width: 950px;
 	height: 630px;
 	background-image: url(../imgs/fundo_game.jpg);
-	border-top: 1px solid #FFF;
-	border-bottom: 1px solid #FFF;
+	border-color: #FFF;
+	border-style: solid;
 }
 
 #jogador {
 	width: 256px;
 	height: 66px;
 	position: absolute;
-	left: 15px;
+	left: 8px;
 	top: 179px;
-	border: 1px solid #000;
 	background-image: url(../imgs/apache.png);
 }
 
-/* Helicoptero */
 #inimigo1 {
 	width: 256px;
 	height: 66px;
 	position: absolute;
-	left: 1900px;
+	left: 689px;
 	top: 253px;
 	background-image: url(../imgs/inimigo1.png);
 	
-}
-
-/* Helicoptero */
-#inimigo3 {
-	width: 256px;
-	height: 66px;
-	position: absolute;
-	left: 2400px;
-	top: 253px;
-	background-image: url(../imgs/inimigo1.png);
 }
 
 #inimigo2 {
@@ -198,13 +182,19 @@ p.inicio-manual {
 /* ******************************************* 
 		EXPLOSÕES 
 ******************************************* */
-#explosao1, #explosao2, .explosaoInimigos {
+#explosao1 {
+	width: 15px;
+	height: 87px;
+	position: absolute;
+
+}
+#explosao2 {
 	width: 15px;
 	height: 87px;
 	position: absolute;
 	
 }
-#explosao3, .explosaoAtropelamento {
+#explosao3 {
 	width: 44px;
 	height: 51px;
 	position: absolute;
@@ -275,7 +265,7 @@ h2 {
 	width: 140px;
 	height: 38px;
 	position: absolute;
-	right: 10px;
+	left: 800px;
 	top: 10px;	
 }
 

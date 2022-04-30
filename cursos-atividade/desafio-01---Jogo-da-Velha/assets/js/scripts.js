@@ -2,6 +2,11 @@
 const jogador = {'X':'jogador_marca_x', 'O':'jogador_marca_o'};
 const comunicacao = document.getElementById('comunicacao');
 
+// Carregamento de Audios
+var somJogada = document.getElementById("jogada");
+var somfinal = document.getElementById("final");
+var somMusicaFundo = document.getElementById("musica_fundo");
+
 // Permutação de possibilidades de panhar
 const ganhador = [ '123', '147', '159', '456', '258', '357', '789', '369' ]
 var marcador = {'X':[], 'O':[]};
@@ -38,6 +43,7 @@ function checarGanhador(){
 					document.getElementById('q'+marcador[vez][b]).classList.add('vencedor');
 					document.getElementById('q'+marcador[vez][c]).classList.add('vencedor');
 					let quadro = document.querySelectorAll('.quadro').forEach(x => x.disabled = true);
+					somMusicaFundo.pause();
 					retorno = true;
 				}
 			}
@@ -61,6 +67,7 @@ function marcarQuadro(btn,quadro){
 		vez = vez === 'X' ? 'O' : 'X';
 		comunicacao.innerHTML = 'Vez de: ' + vez;
 	}
+	somJogada.play();
 }
 
 ////////////////////////////////
@@ -69,8 +76,20 @@ function marcarQuadro(btn,quadro){
 //
 ////////////////////////////////
 
+let questConfirma = "Iniciar novo Jogo?";
+
 function reiniciar(){
-	if ( confirm("Iniciar novo Jogo?") ){
+	if ( confirm(questConfirma) ){
+		// Questionamento
+		questConfirma = "Reiniciar novo Jogo?";
+		document.getElementById("btn-iniciar").innerHTML = "Reiniciar Jogo"
+
+		// somfinal.pause();
+		// somfinal.currentTime = 0;
+
+		somMusicaFundo.play();
+		somMusicaFundo.currentTime = 0;
+
 		let quadro = document.querySelectorAll('.quadro');
 		for (var i = 0; i < 9; i++) {
 			if (quadro[i].classList.contains('jogador_marca_x')){
@@ -93,4 +112,4 @@ function reiniciar(){
 	}
 }
 
-reiniciar();
+//iniciar();

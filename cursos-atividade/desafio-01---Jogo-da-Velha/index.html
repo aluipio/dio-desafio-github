@@ -28,11 +28,18 @@
 			<div id="comunicacao">Clique em "Iniciar Jogo".</div>	
 			<div>
 				<button class="btn jogador_x">Jogador X</button>
-				<button class="btn btn-comando"  onclick="reiniciar();">Iniciar jogo</button>
+				<button class="btn btn-comando" id="btn-iniciar" onclick="reiniciar();">Iniciar jogo</button>
 				<button class="btn jogador_o">Jogador O</button>
 			</div>
 		</main>
 		<footer>Basecamp de @Aluipio <> @DIO - Digital Innovation One</footer>
+
+		<!-- Sons do jogo !-->
+		<audio src="assets/sons/jogada.mp3" preload="auto" id="jogada"></audio>
+		<audio src="assets/sons/final.mp3" preload="auto" id="final"></audio>
+		<audio src="assets/sons/musica_fundo.mp3" preload="auto" id="musica_fundo" autoplay loop></audio>
+		
+		<!-- Carregamento de Script !-->
 		<script src="assets/js/scripts.js"></script>
 	</body>
 </html>
