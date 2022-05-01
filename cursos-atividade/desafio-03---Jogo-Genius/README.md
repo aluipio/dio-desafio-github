@@ -13,7 +13,7 @@ Para executar o projeto, execute o arquivo index.html em browser.
 
 ## Links Úteis
 
-[Digital Innovation One](https://digitalinnovation.one/)
-[HTML básico](https://www.w3schools.com/html/)
-[CSS básico](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-[Javascript básico](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [Digital Innovation One](https://digitalinnovation.one/)
+- [HTML básico](https://www.w3schools.com/html/)
+- [CSS básico](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [Javascript básico](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
