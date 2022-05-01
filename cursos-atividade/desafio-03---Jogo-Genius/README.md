@@ -1,8 +1,8 @@
 # Desafio 03 - Bootcamp: Jogo Genius/Genius 🚀
 
-Projeto de jogo da velha em 30 de abril de 2022, pela [Digital Innovation One](https://digitalinnovation.one/).
+Projeto de jogo Genius em 30 de abril de 2022, pela [Digital Innovation One](https://digitalinnovation.one/).
 
-## Atividade -> Jogo da Velha
+## Atividade
 
 1. Criar uma interface e a mecânica do jogo em HTML + CSS e JS.
 2. Montar uma estrutura básica.
