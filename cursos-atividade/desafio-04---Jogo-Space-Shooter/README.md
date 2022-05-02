@@ -1,4 +1,4 @@
-# Desafio 03 - Bootcamp: Jogo Space Shooter 🚀
+# Desafio 04 - Bootcamp: Jogo Space Shooter 🚀
 
 Projeto de Jogo Space Shooter em 02 de maio de 2022, pela [Digital Innovation One](https://digitalinnovation.one/).
 
