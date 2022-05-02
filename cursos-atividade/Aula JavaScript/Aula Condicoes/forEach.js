@@ -1,0 +1,1 @@
+lasers.forEach((laser) => laser.remove());
