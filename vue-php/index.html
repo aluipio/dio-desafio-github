@@ -205,6 +205,8 @@
 
 
     <script type="text/javascript">
+        const url_base = window.location.protocol + "//" +
+        window.location.host + window.location.pathname;
         const VueProjeto = Vue.createApp({
             data() {
                 return {
@@ -227,7 +229,7 @@
             methods: {
                 async getAllUsers() {
                     let obj = this; // Carrega o projeto VueProjeto
-                    let resultado = await axios.get("http://localhost/cursos/dio-desafio-github/vue-php/api.php",
+                    let resultado = await axios.get(url_base + "api.php",
                         { params: { 'action': 'read' } })
                         .then(function (response) {
                             if (response.data.error) {
@@ -243,7 +245,7 @@
                 async addUser() {
                     let obj = this; // Carrega o projeto VueProjeto
                     var formData = this.toFormData(this.newUser);
-                    let resultado = await axios.post("http://localhost/cursos/dio-desafio-github/vue-php/api.php?action=create", formData)
+                    let resultado = await axios.post(url_base + "api.php?action=create", formData)
                         .then(function (response) {
                             if (response.data.error) {
                                 obj.errorMsg = response.data.message;
@@ -257,7 +259,7 @@
                 async updateUser() {
                     let obj = this; // Carrega o projeto VueProjeto
                     var formData = this.toFormData(this.currentUser);
-                    let resultado = await axios.post("http://localhost/cursos/dio-desafio-github/vue-php/api.php?action=update", formData)
+                    let resultado = await axios.post(url_base + "api.php?action=update", formData)
                         .then(function (response) {
                             if (response.data.error) {
                                 obj.errorMsg = response.data.message;
@@ -271,7 +273,7 @@
                 async deleteUser() {
                     let obj = this; // Carrega o projeto VueProjeto
                     var formData = this.toFormData(this.currentUser);
-                    let resultado = await axios.post("http://localhost/cursos/dio-desafio-github/vue-php/api.php?action=delete", formData)
+                    let resultado = await axios.post(url_base + "api.php?action=delete", formData)
                         .then(function (response) {
                             if (response.data.error) {
                                 obj.errorMsg = response.data.message;

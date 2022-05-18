@@ -1,16 +1,19 @@
-// Função Range
-function range(tamanho, inicial = 1, intervalo = 0) {
-    return [...Array(tamanho).keys()].map(i => i + inicial);
+// Função Sequência()
+function sequencia(n, inicio = 1, intervalo = 1) {
+    return [...Array(n).keys()].map(i => (i * intervalo) + inicio);
 }
-
-// range = (start, stop, step) => Array.from({ length: (stop - start) / step + 1}, (_, i) => start + (i * step));
 // --------------------------------------------------------------------------
-// Função Fatorial
+// Função Range()
+function range(start, stop, step){
+    return Array.from({ length: (stop - start) / step + 1}, (_, i) => start + (i * step));
+}
+// --------------------------------------------------------------------------
+// Função Fatorial()
 function fatorial(numero) {
-    return range(numero).reduce((acumulador, elemento) => acumulador * elemento);
+    return sequencia(numero).reduce((acumulador, elemento) => acumulador * elemento);
 }
 // --------------------------------------------------------------------------
-// Função Arranjo
+// Função Arranjo()
 function arranjo(n, k){
     let retorno = { 'Elementos': n, 'nElementosGrupo': k }
     retorno['nElementos'] = n.length;
@@ -18,7 +21,7 @@ function arranjo(n, k){
     return retorno;
 }
 // --------------------------------------------------------------------------
-// Função Combinação
+// Função Combinação()
 function combinacao(n, k){
     let retorno = { 'Elementos': n, 'nElementosGrupo': k }
     retorno['nElementos'] = n.length;
@@ -27,3 +30,11 @@ function combinacao(n, k){
 }
 
 console.log(combinacao([0,1,2,3],3))
+console.log(sequencia(6,0,10))
+
+const meuObjeto = {
+    'chave': "valor"
+   }
+   
+   console.log(meuObjeto.chave); 
+   console.log(meuObjeto['chave']);
